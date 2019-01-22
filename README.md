@@ -8,5 +8,5 @@ chmod 755 twins_install.sh
 ./twins_install.sh
 
 Check the masternode’s status:  
-cd ~/twins-3.2.0/bin    
+cd twins-3.2.0.4-MN-x86_64   
 ./twins-cli masternode status
