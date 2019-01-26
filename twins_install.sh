@@ -63,7 +63,6 @@ read IPDEFAULT
 	echo "masternode=1" >> $CONF_DIR/$CONF_FILE
 	echo "externalip=$IP" >> $CONF_DIR/$CONF_FILE
 	echo "masternodeprivkey=$PRIVKEY" >> $CONF_DIR/$CONF_FILE
-	cd twins-3.2.0.4-MN-x86_64
 	./twinsd -daemon
 	echo "if server start failure try ./twins -reindex"
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
@@ -92,7 +91,6 @@ else
 	echo "masternode=1" >> $CONF_DIR/$CONF_FILE
 	echo "externalip=$DIP" >> $CONF_DIR/$CONF_FILE
 	echo "masternodeprivkey=$PRIVKEY" >> $CONF_DIR/$CONF_FILE
-	cd twins-3.2.0.4-MN-x86_64
 	./twinsd -daemon
 	echo "if server start failure try ./twinsd -reindex"
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
